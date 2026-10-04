@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ece için küçük bir sürpriz 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game">
+<div class="hearts">♡ ♡ ♡ ♡ ♡</div>
+
+<section class="scene active" id="start">
+  <div class="card start">
+    <small>SANA KÜÇÜK BİR SÜRPRİZ</small>
+    <div class="big">💗</div>
+    <p>Senin için küçük bir sürpriz hazırladım...</p>
+    <button data-next="hello">BAŞLA</button>
+  </div>
+</section>
+
+<section class="scene" id="hello">
+  <div class="world">
+    <div class="message"><p id="typing"></p><button class="arrow" data-next="color">➤➤</button></div>
+    <div class="character">
+      <div class="hair"></div><div class="face"><i class="eye e1"></i><i class="eye e2"></i><i class="mouth"></i></div>
+      <div class="neck"></div><div class="body"></div><div class="arm a1"></div><div class="arm a2"></div>
+      <div class="leg l1"></div><div class="leg l2"></div>
+    </div>
+    <div class="rabbit">🐇</div><div class="ground"></div>
+  </div>
+</section>
+
+<section class="scene" id="color">
+  <div class="world">
+    <div class="card">
+      <small>KÜÇÜK BİR SORU</small>
+      <h2>En sevdiğin<br>renk hangisi?</h2>
+      <div class="choices"><button class="pink" data-choice="pink">PEMBE 💗</button><button class="black" data-choice="black">SİYAH 🖤</button></div>
+      <p id="colorResult"></p>
+    </div>
+    <div class="ground"></div>
+  </div>
+</section>
+
+<section class="scene" id="cake">
+  <div class="world">
+    <div class="card">
+      <small>BİR SORU DAHA</small>
+      <h2>En sevdiğin<br>pasta hangisi? 🎂</h2>
+      <div class="choices"><button data-cake="chocolate">ÇİKOLATALI</button><button data-cake="tiramisu">TİRAMİSU</button><button data-cake="other">TEKRAR DENE</button></div>
+      <p id="cakeResult"></p>
+    </div>
+    <div class="ground"></div>
+  </div>
+</section>
+
+<section class="scene" id="music">
+  <div class="card music">
+    <small>SENİN İÇİN SEÇTİĞİM MÜZİKLER</small>
+    <h2>🎧 Bizim küçük listemiz</h2>
+    <p>Playlisti buradan açıp dinleyebilirsin. 💗</p>
+    <iframe src="https://open.spotify.com/embed/playlist/6v0clRTTTCfnNE9CdhMXYs?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <button data-next="letter">DEVAM ET 💌</button>
+  </div>
+</section>
+
+<section class="scene" id="letter">
+  <div class="letter">
+    <div class="envelope">💌</div>
+    <small>SADECE SENİN İÇİN</small>
+    <h2>Merhaba Ece! 💗</h2>
+    <p>Bu küçük siteyi özellikle senin için hazırladım. Sana verebileceğim küçük bir internet sürprizi olsun istedim.</p>
+    <p>Umarım yüzünde küçük de olsa bir gülümseme bırakır. İyi ki varsın. ❤️</p>
+    <p class="sign">— Radek</p>
+    <button id="restart">BAŞTAN BAŞLA ↻</button>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
